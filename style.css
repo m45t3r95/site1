@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    overflow-x: auto;
+}
+
+.container{
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    padding: 16px;
+}
+.card{
+    flex: 1;
+    padding: 16px;
+}
+nav{
+    background: #34626c;
+}
+nav .container{
+    justify-content: space-between;
+}
+nav .logo{
+    flex: 1;
+}
+nav .menu{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav .logo h1{
+    color: white;
+    padding: 16px;
+}
+nav .menu ul{
+    display: flex;
+    list-style-type: none;
+    flex: 1;
+}
+nav .menu li{
+    flex: 1;
+}
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    width: 100%;
+    float: right;
+    text-align: center;
+}
+nav .menu a:hover{
+    background: teal;
+}
+nav .menu .hamburger{
+    flex: 1;
+    display: none;
+    justify-content: flex-end;
+    padding: 16px;
+}
+nav .menu .hamburger i{
+    font-size: 24px;
+    color: white;
+}
+
+.first-section{
+    background: #839b97;
+}
+.first-section .container{
+    align-items: center;
+}
+.first-section .text-content,.image-content{
+    flex: 1;
+    padding: 16px;
+}
+.first-section .text-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.first-section .image-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-section .text-content p{
+    margin: 16px 0px 16px;
+}
+.first-section .text-content button{
+    padding: 8px 16px;
+    background: lightyellow;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.first-section .image-content img{
+    width: 100%;
+}
+
+
+.second-section{
+    background: #cfd3ce;
+}
+.second-section .container{
+    flex-direction: column;
+}
+.second-section h3{
+    text-align: center;
+}
+.second-section .cards{
+    display: flex;
+}
+.second-section .card{
+    padding: 8px;
+    margin: 8px;
+    background: wheat;
+}
+.second-section .card img{
+    width: 100%;
+}
+.second-section .card p{
+    margin: 16px 0px 16px;
+}
+.second-section .card button{
+    padding: 8px 16px;
+    background: lightyellow;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+footer{
+    background: #c6b497;
+}
+footer h3{
+    margin: 16px 0px 16px;
+}
+footer .card{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+footer .social{
+    align-items: flex-end;
+}
+footer .about{
+    align-items: center;
+}
+footer .posts img{
+    max-width: 64px;
+    margin-right: 8px;
+}
+footer .social img{
+    max-width: 32px;
+    margin-right: 8px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer li{
+    display: flex;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+}
+
+
+.copyright .container{
+    align-items: center;
+    padding: 16px;
+}
+.copyright .left,.right{
+    flex: 1;
+}
+.copyright ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.copyright i{
+    font-size: 24px;
+}
+.copyright li{
+    display: flex;
+    align-content: center;
+    margin: 0px 8px 0px;
+}
+.copyright a{
+    text-decoration: none;
+    padding: 0px 8px 0px;
+}
+
+
+
+@media screen and (max-width: 942px){
+    nav .menu a{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    nav .menu ul{
+        display: none;
+    }
+    nav .menu .hamburger{
+        display: flex;
+    }
+    .first-section .container{
+        flex-direction: column;
+    }
+    .first-section .text-content{
+        order: 2;
+    }
+    .first-section .image-content{
+        order: 1;
+    }
+    .second-section .cards{
+        flex-direction: column;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    .copyright ul{
+        flex-direction: column;
+    }
+    .copyright li{
+        margin: 4px;
+    }
+}
